@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-theme{
+     background-color: #000000;
+     color: #ffffff;
+}
+
+.clock-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 10rem;
+    font-size: 6rem;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.calendar-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 15rem;
+    font-size: 6rem;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.twentyfour-hours-button-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 3rem;
+    left: 12rem;
+}
+
+#twentyfour-hours{
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#twentyfour-hours:hover{
+    border: solid black;
+}
+
+.button-container{
+    display: flex;
+    position: relative;
+    bottom: 15rem;
+    left: 90%;
+}
+
+#light{
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#light:hover{
+    border: solid black;
+}
+
+body.dark-theme #light{
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 600px){
+    .clock-container{
+        font-size: 3rem;
+    }
+
+    .calendar-container{
+        font-size: 3.2rem;
+    }
+
+    .twentyfour-hours-button-container{
+        position: relative;
+        top: 6rem;
+        left: 1rem;
+    }
+
+    .button-container{
+        position: relative;
+        bottom: 0;
+        left: 17rem;  
+        bottom: 8rem;
+    }
+}
